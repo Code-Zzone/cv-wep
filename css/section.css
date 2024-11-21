@@ -1,0 +1,223 @@
+/* Section Start */
+/* Up And Down Start */
+section  .down  img{
+    width: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px; 
+    opacity: 0.7;
+}
+
+section  .up img{
+    width: 40px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    opacity: 0.7;
+}
+/* Up And Down End */
+
+/* Slider Start */
+section .slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px;
+    background-color: #000;
+}
+section .slider h1 {
+    color: white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.453);
+    padding: 10px;
+    border-radius: 20px;
+    border-bottom-left-radius: 5px;
+    width: 250px;
+    text-align: center;
+}
+.slider button {
+    background-color: #000;
+    color: white;
+    padding: 5px 20px !important;
+}
+.cv a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(219, 207, 207);
+    padding: 20px;
+    border-radius: 50%;
+    animation-name: cv;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+
+}
+/* Animation Cv Start */
+@keyframes cv {
+    0%{
+        border: 2px solid red;
+    }
+    25% {
+        border: 5px solid black;
+    }
+    50% {
+        border: 2px solid green;
+    }
+    100% {
+        border-color: transparent red transparent black;
+    }
+}
+/* Animation Cv End */
+section .slider .photo {
+
+    /* animation-name: bor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+ .next-back {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #123; */
+    }
+     .next-back button {
+        /* width: 100%; */
+        /* padding: 2px 10px; */
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        /* background-color: #123; */
+        }
+        section .slider .photo .next-back button:hover{
+            /* width: 100%; */
+            padding: 1px 8px;
+            transition: .5s;
+            }
+section .slider .photo img {
+    width: 250px;
+   
+  border: 2px solid #000000;
+  border-image: linear-gradient(to bottom, #0000FF, #FF00FF) 1;
+  border-radius: 50px;
+    border: 2px solid #aaa;
+    animation-name: bor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+
+}
+section .slider .btns {
+    background-color: rgba(0, 0, 0, 0.453);
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 20px;
+    border-bottom-left-radius: 5px;
+}
+section .slider .btns a {
+    text-decoration: none;
+    color: white;
+}
+section .slider .btns .btn {
+    padding: 10px;
+    border-radius: 10px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid rgb(113, 110, 110);
+}
+section .slider .btns .btn:hover {
+    background-color: rgba(255, 255, 255, 0.332);
+}
+/* Animation In Slider Start */
+@keyframes bor {
+    0% {
+        border-color: linear-gradient(to bottom, #0000FF, #FF00FF)1 transparent transparent transparent;
+    }
+    25% {
+        border-color: transparent linear-gradient(to bottom, #0000FF, #FF00FF)1 transparent transparent;
+    }
+    50% {
+        border-color: transparent  transparent linear-gradient(to bottom, #0000FF, #FF00FF)1 transparent;
+    }
+    100% {
+        border-color: transparent  transparent  transparent linear-gradient(to bottom, #0000FF, #FF00FF)1;
+    }
+}
+/* Animation In Slider End */
+/* Slider End */
+/* About Start */
+section .about {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../images/logo-dark.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: scroll;
+    padding: 10%;
+}
+section .about .text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px 10px;
+    padding: 30px;
+}
+section .about .text h2 {
+
+}
+section .about .text p {
+
+}
+section .about .text a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #aaa;
+    padding: 5px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition:  0.s5;
+}
+section .about .text a:hover {
+    background-color: #7a7777;
+}
+section .about .pho {
+
+}
+section .about .pho img {
+    width: 50vw;
+    border: 2px solid rgb(158 158 158);
+    border-radius: 10px;
+}
+/* Media In About Start  */
+@media(max-width: 951px){
+    section .about {
+        flex-wrap: wrap;
+    }
+}
+/* Media In About End  */
+/* About End */
+/* Section End */

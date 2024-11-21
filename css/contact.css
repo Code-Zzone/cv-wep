@@ -1,0 +1,309 @@
+/* Contact Start */
+.main-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 100px;
+    padding: 50px;
+    background-color: white;
+}
+.main-contact:hover {
+    opacity: 0.9;
+}
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 5%;
+}
+.contact .h-pc {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact p {
+    font-weight: 100;
+}
+.pc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.inputs {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    column-gap: 40px;
+}
+.name , .mail {
+    display: flex;
+    flex-direction: column;
+
+}
+.in {
+    padding: 10px 25px;
+    border: none;
+    background-color: #e4e4e4;
+    border-radius: 20px;
+    color: #000;
+    font-weight: bold;
+
+}   
+.contact .inputs label {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submit {
+    padding: 10px 150px;
+    background-color: #4f4c4c8d;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 30%;
+}
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e4e4e4;
+    padding: 50px;
+}
+.social .card {
+    padding: 20px;
+    position: relative;
+    }
+    .social .card img {
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -110px;
+    }
+
+    .social .card h3 {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .phon {
+        display: none !important;
+    }
+    .phon {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 50px;
+        position: relative;
+        z-index: 25;
+        border-radius: 10px;
+        height: 45vh;
+        color: white;
+        box-shadow: 1px 1px 10px black, -1px -1px 10px black;
+    }
+    .h-pho {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #000;
+    }
+     .pho:hover {
+        background-color: transparent;
+    }
+     .pho:hover .back{
+        height: 100%;
+    }
+    .back {
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 0;
+        z-index: -1;
+        border-radius: 8px;
+        transition: height 1s;
+    }
+    .phon .user-phone-mail input {
+        padding: 10px 20px;
+        outline-style: none;
+        border: none;
+        border-radius: 5px;
+        background-color: #8282827d;
+        color: white;
+    }
+     .phon .user-phone-mail {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 5;
+    }
+    .phon .user-phone-mail label {}
+    .phon .sub-reset {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .phon .sub-reset input {
+        color: white;
+        font-weight: bold;
+    }
+    .phon .sub-reset input:hover {
+        cursor: pointer;
+    }
+    
+/* Contact End */
+/* Screen Mobile Start */
+@media (max-width: 951px) { 
+    .main-contact {
+        display: none;
+    }
+    .phon {
+        display: block !important;
+    }
+    .h-pho {
+        color: white !important;
+    }
+    #form {
+        background-color: #000;
+    }
+}
+/* Screen Mobile End */
+    /* .contact {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: black;
+        padding: 20px 0;
+        gap: 50px;
+        overflow: hidden;
+    }
+    .contact h2 {
+        z-index: 5;
+        background-color: rgba(145, 143, 143, 0.5);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .contact form {
+        display: flex;
+        max-width: 500px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 50px;
+        position: relative;
+        z-index: 25;
+        border-radius: 10px;
+        height: 65vh;
+        color: white;
+        box-shadow: 1px 1px 10px black , -1px -1px 10px black;
+    }
+    .contact form:hover {
+        background-color: transparent;
+    }
+    .contact form:hover .back{
+        height: 100%;
+    }
+    .back {
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 0;
+        z-index: -1;
+        border-radius: 8px;
+        transition: height 1s;
+    }
+    form .user-phone-mail input {
+        padding: 10px 20px;
+        outline-style: none;
+        border: none;
+        border-radius: 5px;
+        background-color: #8282827d;
+        color: white;
+    }
+    .contact form .user-phone-mail {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 5;
+    }
+    section .contact form .user-phone-mail label {}
+    section .contact .sub-reset {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    section .contact .sub-reset input {
+        color: white;
+        font-weight: bold;
+    }
+    section .contact .sub-reset input:hover {
+        cursor: pointer;
+    }
+    
+    
+    .social {
+        color: black;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 10px black, -1px -1px 10px black;
+        height: 65vh;
+        row-gap: 50px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .social:hover .back {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: block;
+    }
+    
+    .social h2 {
+        background-color: rgba(145, 143, 143, 0.5);
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+    }
+    .social-links-icones {
+        align-items: flex-end;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        row-gap: 20px;
+    }
+    .social .social-links  a i {
+        color: white;
+        font-size: 50px;
+        height: 50px;
+        width: 50px;
+    }
+    .face-tik , 
+    .linked-mail,
+    .phone-whats {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+    } */
