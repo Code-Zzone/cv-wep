@@ -115,6 +115,12 @@
         color: white;
         box-shadow: 1px 1px 10px black, -1px -1px 10px black;
     }
+
+    .form-phone {
+        position: relative;
+        overflow: auto;
+        padding: 10px;
+    }
     .h-pho {
         text-align: center;
         margin-bottom: 10px;
