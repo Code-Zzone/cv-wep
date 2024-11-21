@@ -20,6 +20,7 @@
     flex-direction: column;
     row-gap: 20px;
     padding: 5%;
+    over-flow: hidden;
 }
 .contact .h-pc {
     font-size: 40px;
