@@ -20,7 +20,6 @@
     flex-direction: column;
     row-gap: 20px;
     padding: 5%;
-    over-flow: auto;
 }
 .contact .h-pc {
     font-size: 40px;
@@ -91,16 +90,14 @@
         position: absolute;
         top: -110px;
     }
-
     .social .card h3 {
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
     }
-
-
     .phon {
         display: none !important;
     }
+
     .phon {
         display: flex;
         width: 100%;
@@ -112,15 +109,10 @@
         position: relative;
         z-index: 25;
         border-radius: 10px;
-        height: 45vh;
+        /* height: 45vh; */
         color: white;
-        box-shadow: 1px 1px 10px black, -1px -1px 10px black;
-    }
-
-    .form-phone {
-        position: relative;
         overflow: auto;
-        padding: 10px;
+        box-shadow: 1px 1px 10px black, -1px -1px 10px black;
     }
     .h-pho {
         text-align: center;
